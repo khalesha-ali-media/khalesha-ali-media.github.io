@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="css/style.css">
+    <title>About Me</title>
+</head>
+
+<body>
+  <header>
+     <div id="wrapper">
+         <nav>
+             <ul>
+                <li><a href="">ABOUT</a></li>
+            
+                <li><a href="">HOBBIES</a></li>
+        
+                <li><a href="">CONTACT</a></li>
+             </ul>
+         </nav>
+     </div>
+  </header>
+   
+ <div class="main">
+     <h1> Hi, I'm <span id="header-highlight">Khalesha</span> Ali<span id="header-highlight">.</span></h1>
+     <h2>Prefered pronouns are (He/They) and I also go by the Name "Mez".</h2>
+     <img src="../AboutMe.html/Untitled44_20210410214354 (1).png" alt="Meet the artist">
+ </div>
+
+ <div Class="article">
+        <p> I'm a 18 year old freelance Digital artist from Canada, attending Humber College in the Multimedia Design and Development Program. 
+         I own 4 pet parrots and spend a lot of time sketching and drawing Cartoony anthropromorphic character designs. A few more interest of mine
+         besides drawing include dance, spending time outdoors and learning new languages. I'm currently fluent in 3 languages (English,French & Spanish)
+         and have been learning korean, currently knowing enough to be conversationally fluent.
+        </p>
+ </div>
+
+ <a href="#" id="read-more">Read More</a>
+
+ <div id="read-more-content">
+    <p>I'm not much of a people person most of the time, I sometimes just like to explore things alone. I like bright colors, favorite animals are Nudibranch's 
+        and low-key aspire to live the life of a studio ghibli character in lose summer clothes, eating lots of bread.</p>
+ </div>
+
+ <a href="#" id="read-less">Read Less</a>
+
+ <script>
+
+     var readMore = document.getElementById('read-more');
+     var readMoreContent = document.getElementById('read-more-content');
+     var readLess = document.getElementById('read-less')
+
+    readMore.addEventListener("click", function(){
+
+        readMore.style.display = "none";
+        readMoreContent.style.display = "block";
+        readLess.style.display = "inline";
+        
+
+    });
+
+    readLess.addEventListener("click", function(){
+        readMore.style.display = "inline";
+        readMoreContent.style.display = "none";
+        readLess.style.display = "none";
+    });
+
+ </script>
+
+
+ <section class="contacts">
+    <h3>Ways to Contact Me:</h3>
+    <br>
+    <a id="contact-list">
+        <button class="link-button">E-mail</button>
+       <button class="link-button">Instagram</button>
+       <button class="link-button">Twitter</button>
+    </a>
+ </section>
+
+ <script>
+    alert("Hello! Welcome To My Web Page.");
+</script>
+
+ <div class="form"> 
+     <p>First name: <input type="text" id="fname" name ="firstname"></p>
+     <p>Last name: <input type="text" id="lname" name="lastname"></p>
+     <p><input type="button" value="Say Hi!" id="name-button"></p>
+ </div>
+
+  <script>
+    var fname = document.getElementById("fname");
+    var lname = document.getElementById("lname");
+
+       document.getElementById("name-button").onclick = function () { 
+       alert('Hello ' + fname.value + " " + lname.value);
+       }
+  </script>
+
+  <div class="b-day">
+    <p> Click to see how many months left until my B-day.</p>
+    <p><input type="button" value="Click here" id="click-me"></p>
+  </div>
+
+  <script>
+      var x = 12
+
+      console.log (x - 6);
+      document.getElementById("click-me").onclick = function(){
+        alert ('Theres' + " " + (x - 6) + " " + "months" + "left" + " " + "until" + " " + "my" + " " + "B-day!");
+      }
+  </script>
+
+  <script>
+      document.getElementById("read-more").onmouseover = function() {mouseOver()};
+      document.getElementById("read-more").onmouseout = function() {mouseOut()};
+
+         function mouseOver() {
+        document.getElementById("read-more").style.color = "orchid";
+        }
+
+        function mouseOut() {
+        document.getElementById("read-more").style.color = "white";
+        }
+  </script>
+
+  <div id="cat-sticker">
+    <img src="../AboutMe.html/44189352_HexrD2yDDXJrUf9 (1).png" alt="sticker">
+
+  </div>
+
+  <script>
+      function myFunction() {
+        document.getElementById("cat-sticker").style.animation = " 4s 2";
+      }
+  </script>
+</body>
+
+<footer>
+
+</footer>
